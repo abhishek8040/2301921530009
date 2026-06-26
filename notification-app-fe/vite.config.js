@@ -6,8 +6,13 @@ import { fileURLToPath, URL } from 'node:url'
 export default defineConfig({
   plugins: [react()],
   server: {
-    fs: {
-      allow: [fileURLToPath(new URL('..', import.meta.url))],
+    proxy: {
+      '/api': 'http://127.0.0.1:3000',
+    },
+  },
+  resolve: {
+    alias: {
+      '@backend': fileURLToPath(new URL('../notification-app-be', import.meta.url)),
     },
   },
 })
