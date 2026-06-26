@@ -1,0 +1,11 @@
+import { Log } from "./logger.js";
+
+const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiYXVkIjoiaHR0cDovLzIwLjI0NC41Ni4xNDQvZXZhbHVhdGlvbi1zZXJ2aWNlIiwiZW1haWwiOiJjc2FpbWwyMzA2NEBnbGJpdG0uYWMuaW4iLCJleHAiOjE3ODI0NTQzMzQsImlhdCI6MTc4MjQ1MzQzNCwiaXNzIjoiQWZmb3JkIE1lZGljYWwgVGVjaG5vbG9naWVzIFByaXZhdGUgTGltaXRlZCIsImp0aSI6ImY1OTVjMDgyLWU4ZDItNDUzYy05MjgwLTMzOGQwNTE5MTI3MyIsImxvY2FsZSI6ImVuLUlOIiwibmFtZSI6ImFiaGlzaGVrIGR1YmV5Iiwic3ViIjoiNDcyNTg3MDEtZTc1MS00YzU4LTk2MzQtNzA0YjQ5MGEyN2NlIn0sImVtYWlsIjoiY3NhaW1sMjMwNjRAZ2xiaXRtLmFjLmluIiwibmFtZSI6ImFiaGlzaGVrIGR1YmV5Iiwicm9sbE5vIjoiMjMwMTkyMTUzMDAwOSIsImFjY2Vzc0NvZGUiOiJ4eGtKbmsiLCJjbGllbnRJRCI6IjQ3MjU4NzAxLWU3NTEtNGM1OC05NjM0LTcwNGI0OTBhMjdjZSIsImNsaWVudFNlY3JldCI6IktRSlhiQndZYXN2TlNxU3gifQ.lG5heQ6NEupYwHg-ailRVQoo5WPMqewu_xJ7mE0GIb4";
+
+Log(
+    "frontend",
+    "info",
+    "api",
+    "Logging middleware test successful",
+    token
+).then(console.log);
